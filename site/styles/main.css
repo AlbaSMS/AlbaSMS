@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.width-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-top: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    margin-bottom: 3em;
+    background-color: rgb(253, 236, 250);
+    color: rgb(74, 0, 74);
+}
+
+footer hr {
+    width: 50vw;
+    min-width: 300px;
+    max-width: 890px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 3px dotted rgb(106, 0, 88);
+}
+
+dl dt::after {
+    content: ":";
+}
+
+body {
+    background-color: rgb(255, 211, 247);
+    color: rgb(106, 0, 88);
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(54, 0, 45);
+}
+
+a {
+    color: rgb(204, 0, 170);
+}
+
+header nav a {
+    color: rgb(198, 69, 176);
+    border-top: 4px solid transparent;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+header nav a:hover {
+    border-color: rgb(198, 69, 176);
+    cursor: pointer;
+}
+
+::selection {
+    background-color: rgb(219, 254, 254);
+    color: rgb(0, 180, 255);
+}
+
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+table td,
+table th {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+thead th,
+tfoot th,
+tfoot td,
+tbody th {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+tbody td {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: block;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+}
+
+button[type="submit"] {
+    border: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    color: white;
+    background-color: rgb(20, 86, 240);
+}
+
+input:invalid,
+textarea:invalid,
+select:invalid {
+    background-color: rgb(250, 204, 216);
+}
