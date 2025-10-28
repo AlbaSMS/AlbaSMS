@@ -39,6 +39,8 @@ dl dt::after {
 body {
     background-color: rgb(255, 211, 247);
     color: rgb(106, 0, 88);
+    font-family: "Baskervville", serif;
+    line-height: 1.3;
 }
 
 h1,
@@ -49,6 +51,11 @@ h3 {
 
 a {
     color: rgb(204, 0, 170);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header nav a {
@@ -61,11 +68,15 @@ header nav a {
     padding-bottom: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 header nav a:hover {
     border-color: rgb(198, 69, 176);
     cursor: pointer;
+    text-decoration: none;
 }
 
 ::selection {
@@ -140,4 +151,67 @@ input:invalid,
 textarea:invalid,
 select:invalid {
     background-color: rgb(250, 204, 216);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cardo", serif;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+fieldset ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+h1 {
+    background: #94BBE9;
+    background: radial-gradient(circle, rgba(148, 187, 233, 1) 0%, rgb(255, 211, 247) 100%);
+    text-align: center;
+}
+
+.bio {
+    column-count: 3;
+    column-gap: 2em;
+}
+
+.bio table {
+    column-span: all;
+    display: table;
+    margin-top: 1em;
+    border-collapse: collapse;
+}
+
+.bio table caption {
+    caption-side: bottom;
+}
+
+img {
+    max-width: 100%;
+}
+
+img.me {
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    font-size: 75%;
+    text-align: center;
+}
+
+a[href="#top"] {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+a[href="#top"]:hover {
+    text-decoration: none;
 }

@@ -6,10 +6,29 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="site/styles/normalize.css">
     <link rel="stylesheet" href="site/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <meta charset="utf-8">
     <meta name="author" content="Alba Martinez">
     <meta name="description" content="Alba's webpage including Haiku and BTS quotes.">
     <title>My test page</title>
+    <style>
+        ul.usseful-links {
+            padding: 0;
+        }
+
+        ul.usseful-links li {
+            padding-left: 1em;
+            background-image: url(images/link.png);
+            list-style: none;
+            background-size: 10px 10px;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+    </style>
     <!-- Found me! -->
 </head>
 
@@ -26,7 +45,7 @@
         </header>
         <main>
             <h1>Useful Links</h1>
-            <ul>
+            <ul class="usseful-links">
                 <li><a href="https://validator.w3.org/nu/" title="w3.org validator service" target="_blank">HTML
                         Validator</a></li>
                 <li><a href="https://realfavicongenerator.net/" title="Favicon Generator tool" target="_blank">Favicon
