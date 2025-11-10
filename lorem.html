@@ -12,16 +12,41 @@
         href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alba Martinez">
     <meta name="description" content="Alba's webpage including Haiku and BTS quotes.">
     <title>My test page</title>
     <style>
         img {
             margin: 1em;
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+
+        .float-left {
+            float: left;
+            margin: 0 1em 1em 0;
+        }
+
+        .float-right {
+            float: right;
+            margin: 0 0 1em 1em;
         }
 
         footer {
             clear: both;
+        }
+
+        @media (max-width: 480px) {
+
+            .float-left,
+            .float-right {
+                float: none;
+                display: block;
+                margin: 1em auto;
+                max-width: 100%;
+            }
         }
     </style>
     <!-- Found me! -->
@@ -31,6 +56,10 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon">
+                    <div></div>
+                </label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
@@ -52,13 +81,13 @@
                 at sollicitudin. Praesent ut condimentum lectus. Vestibulum mollis, nisl vitae tristique auctor, nisl
                 ipsum pulvinar mi, non congue orci leo eu neque.</p>
             <p>
-                <img src="https://loremflickr.com/200/150/cats" style="float: right;" alt="Cat Image">
+                <img src="https://loremflickr.com/200/150/cats" class="float-right" alt="Cat Image">
                 Integer nec turpis ut sapien dictum sollicitudin. Vivamus convallis neque ut diam ullamcorper, ac varius
                 mauris ultricies. Donec laoreet ex et risus efficitur, sed sollicitudin turpis bibendum. Curabitur a
                 felis ac justo feugiat tempus.
             </p>
             <p>
-                <img src="https://loremflickr.com/200/150/dogs" style="float: left;" alt="Dogs Image">
+                <img src="https://loremflickr.com/200/150/puppy" class="float-left" alt="Puppy Image">
                 Quisque fringilla, odio a tincidunt volutpat, est urna aliquet nisl, id eleifend justo lacus et justo.
                 Vestibulum ut nulla sit amet eros maximus molestie non posuere nulla. Nunc aliquam iaculis sodales.
                 Nulla nunc elit, consectetur vitae odio eu, pulvinar laoreet nibh. Suspendisse potenti. Nulla erat eros,
