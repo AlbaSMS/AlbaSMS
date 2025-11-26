@@ -459,6 +459,12 @@ iframe {
     .sandwich-icon::after {
         top: 16px;
     }
+
+    .sandwich-icon,
+    .sandwich-icon::before,
+    .sandwich-icon::after {
+        transition: all 0.3s ease;
+    }
 }
 
 #menu-toggle,
@@ -469,3 +475,22 @@ iframe {
 #menu-toggle:checked+.sandwich-icon+ul {
     height: 200px;
 }
+#menu-toggle:checked + .sandwich-icon {
+    border-top-color: transparent;
+}
+
+#menu-toggle:checked + .sandwich-icon::before {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+#menu-toggle:checked + .sandwich-icon::after {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#menu-toggle:checked + .sandwich-icon div {
+    opacity: 0;
+}
+
+
